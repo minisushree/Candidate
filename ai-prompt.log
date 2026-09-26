@@ -1,0 +1,16 @@
+# AI Prompt Log
+# Append a numbered entry for every AI interaction in the order they occurred.
+# See TASKS.md for the required format.
+
+---
+1.
+timestamp: 2026-09-19T15:54:00+05:30
+model: GPT-5.6 Luna
+prompt: |
+  Review the uploaded candidate-project repository and implement the Order Management System described in PRODUCT.md and TASKS.md while keeping the existing Inventory Management System usable. The OMS must provide product catalog, product detail, order history and order detail screens; GET /api/store/products; GET /api/store/products/{id}; POST /api/orders; GET /api/orders; GET /api/orders/{id}; order statuses CREATED and CANCELLED; stock deduction on order placement; stock restoration on cancellation; immutable product name and unit price snapshots; no exact stock counts in storefront responses; deleted products hidden from listings while historical orders remain intact; and docker-compose up from the repository root must start a usable browser application and API without extra application commands. Do not add third-party Docker images beyond those already in docker-compose.
+2.
+timestamp: 2026-09-19T16:02:00+05:30
+model: GPT-5.6 Luna
+prompt: |
+  Inspect candidate-project.zip, review the existing Spring Boot backend, React frontend, Docker Compose setup and AI prompt log, then make the repository a coherent working take-home submission rather than adding isolated files. Preserve IMS functionality and add the OMS with transactional order/inventory behavior, validation, historical order snapshots, cancellation, and a browser-accessible application started by docker-compose up.
+---
